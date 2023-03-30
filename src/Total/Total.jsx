@@ -97,7 +97,7 @@ const Total = ({ userData, setBasket }) => {
 
                         const sum = pipeLength * item.price;
 
-                        setCell(elem.step + item.width / 1000)
+                        setCell((elem.step + (item.width / 1000)).toFixed(2))
 
                         setTotalPipe((prev) => {
                             return {
