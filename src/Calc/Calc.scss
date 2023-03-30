@@ -1,0 +1,58 @@
+.calculate {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    gap: 30px;
+    &__column{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__material,
+    &__strength {
+        display: block;
+        width: 100%;
+        padding: 0.75rem 2.5rem 0.75rem 1rem;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-family: inherit;
+        font-size: 1rem;
+        outline: none;
+        transition: all 0.3s ease-out;
+        cursor: pointer;
+    }
+
+    &__title {
+        text-align: center;
+    }
+}
+
+input[type="number"] {
+    padding: 0.75rem 0.75rem 0.75rem 1rem;
+    vertical-align: top;
+    outline: none;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+
+@media(max-width:560px){
+    .calculate{
+        &__title{
+            font-size: 18px;
+        }
+
+        &__column{
+            flex-direction: column;
+            align-items:flex-start;
+            gap: 10px;
+        }
+    }
+}
